@@ -34,7 +34,7 @@ paymentmethods[6] = countries #adds every country to offline payment section
 
 #This following part makes a paymentmethods list 
 #this line is for the HTML table labels - includes links to each payment method
-paymentmethodsnames = ['<a href="https://www.wix.com/support/html5/article/setting-up-paypal-payments-in-wix-stores">PayPal</a>','<a href="https://www.wix.com/support/html5/article/setting-up-moolah-authorizenet-as-a-payment-gateway-in-wix-stores">Moolah</a>','<a href="https://www.wix.com/support/html5/article/setting-up-stripe-as-a-payment-gateway-in-wix-stores">Stripe</a>','<a href="https://www.wix.com/support/html5/article/setting-up-mercadopago-as-a-payment-method-in-wix-stores">MercadoPago</a>','<a href="https://www.wix.com/support/html5/article/setting-up-wirecard-as-a-payment-gateway-in-wix-stores">Wirecard</a>','<a href="https://www.wix.com/support/html5/article/setting-up-pagseguro-as-a-payment-gateway-in-wix-stores">PagSeguro</a>','<a href="https://www.wix.com/support/html5/article/setting-up-offline-payments-in-wix-stores">Offline</a>']
+paymentmethodsnames = ['<a href="https://es.wix.com/support/html5/article/configurando-paypal-como-m%C3%A9todo-de-pago-en-wix-stores">PayPal</a>','<a href="https://es.wix.com/support/html5/article/setting-up-moolah-authorizenet-as-a-payment-gateway-in-wix-stores">Moolah</a>','<a href="https://es.wix.com/support/html5/article/setting-up-stripe-as-a-payment-gateway-in-wix-stores">Stripe</a>','<a href="https://es.wix.com/support/html5/article/setting-up-mercadopago-as-a-payment-method-in-wix-stores">MercadoPago</a>','<a href="https://es.wix.com/support/html5/article/setting-up-wirecard-as-a-payment-gateway-in-wix-stores">Wirecard</a>','<a href="https://es.wix.com/support/html5/article/setting-up-pagseguro-as-a-payment-gateway-in-wix-stores">PagSeguro</a>','<a href="https://es.wix.com/support/html5/article/setting-up-offline-payments-in-wix-stores">Offline</a>']
 
 
 ###Debug the offline payments section
@@ -46,7 +46,7 @@ x=0
 z=0
 with open("wspm.html", "w") as wspm:
     print('<html><body><style>body{font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;}</style>',file=wspm)
-    print("Please select your country below to see our supported payment methods for Wix Stores: <br><br>",file=wspm)
+    print("Por favor selecciona tu pais para ver los metodos de pago aceptados por Wix Stores: <br><br>",file=wspm)
     #generates the dropdown menu of all the countries we support
     print('<select id="selectedcountry" onchange="optionCheck()">',file=wspm)
     for z in range(0,len(country)):
@@ -90,5 +90,5 @@ with open("wspm.html", "w") as wspm:
             }
     </script>
     """,file=wspm)
-    print("<br>Third-party restrictions and limitations may apply.</body></html>",file=wspm)
+    print("<br>Restricciones y limitaciones externas puede que apliquen.</body></html>",file=wspm)
 
